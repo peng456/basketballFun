@@ -3,8 +3,8 @@
 
 ## 运行
 
-1.go run main.go 即可提供服务。
-2.go 会监控某个端口提供服务
+1.go run main.go 即可提供服务。  
+2.go 会监控某个端口提供服务  
 3.可以前端直接请求此端口 or 通过nginx 转发前端请求
 
 下面是go-gin-example  原说明。
