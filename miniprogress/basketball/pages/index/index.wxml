@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+  <!--map模块-->
+  <map class="mb-map" longitude="{{longitude}}" latitude="{{latitude}}" scale="15" markers="{{markers}}" cover-view
+="{{controls}}" bindmarkertap="controltap"
+bindregionchange="controltapre"
+bindcallouttap="controltapcall"
+
+/>
+  <!--扫码弹出层-->
+  <modal class="mb-lock" hidden="{{lockhidden}}" title="欢迎你来使用我的小程序。Yeah!!!" bindconfirm="confirm" no-cancel="true"
+  >
+  <button
+  type="default"
+  size="{{defaultSize}}"
+  loading="{{loading}}"
+  plain="{{plain}}"
+  disabled="{{disabled}}"
+  bindtap="default"
+  hover-class="other-button-hover"
+> 
+查看球场详情
+</button>
+
+  <button
+  type="default"
+  size="{{defaultSize}}"
+  loading="{{loading}}"
+  plain="{{plain}}"
+  disabled="{{disabled}}"
+  bindtap="default"
+  hover-class="other-button-hover"
+> 
+导航到此球场
+</button>
+  </modal>
+  <!--newm模块-->
+  <navigator class="mb-new" url="../../pages/recharge/recharge">
+    <image src="../../images/mywallet.png"></image>
+    <text>重要的事： 动起来，make a different !!!</text>
+    <text class="right">></text>
+  </navigator>
+</view>
