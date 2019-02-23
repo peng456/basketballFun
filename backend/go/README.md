@@ -1,3 +1,13 @@
+# 基于 go-gin 框架实现的。 
+# 使用demo (go-gin-example（go-gin + gorm + redis 缓存）) 具体实现本项目 后端功能。
+
+## 运行
+
+1.go run main.go 即可提供服务。  
+2.go 会监控某个端口提供服务  
+3.可以前端直接请求此端口 or 通过nginx 转发前端请求
+
+下面是go-gin-example  原说明。
 # Go Gin Example
 
 An example of gin contains many useful features
